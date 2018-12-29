@@ -12,6 +12,7 @@
 		634F94E821D7F80800960D20 /* ViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 634F94E721D7F80800960D20 /* ViewController.graphql */; };
 		634F94EA21D7F83000960D20 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F94E921D7F83000960D20 /* API.swift */; };
 		634F94EC21D7F92200960D20 /* Apollo_Rx_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F94EB21D7F92200960D20 /* Apollo_Rx_Extension.swift */; };
+		634F94F321D809EC00960D20 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 634F94F221D809EC00960D20 /* README.md */; };
 		636CCD5121D7EC6400C75513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636CCD5021D7EC6400C75513 /* AppDelegate.swift */; };
 		636CCD5321D7EC6400C75513 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636CCD5221D7EC6400C75513 /* ViewController.swift */; };
 		636CCD5621D7EC6400C75513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636CCD5421D7EC6400C75513 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		634F94E721D7F80800960D20 /* ViewController.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = ViewController.graphql; sourceTree = "<group>"; };
 		634F94E921D7F83000960D20 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		634F94EB21D7F92200960D20 /* Apollo_Rx_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apollo_Rx_Extension.swift; sourceTree = "<group>"; };
+		634F94F221D809EC00960D20 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		636CCD4D21D7EC6400C75513 /* Apollo_Swift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apollo_Swift_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		636CCD5021D7EC6400C75513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		636CCD5221D7EC6400C75513 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				636CCD5721D7EC6500C75513 /* Assets.xcassets */,
 				636CCD5921D7EC6500C75513 /* LaunchScreen.storyboard */,
 				636CCD5C21D7EC6500C75513 /* Info.plist */,
+				634F94F221D809EC00960D20 /* README.md */,
 			);
 			path = Apollo_Swift_Example;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				634F94F321D809EC00960D20 /* README.md in Resources */,
 				634F94E621D7F7F500960D20 /* schema.json in Resources */,
 				636CCD5B21D7EC6500C75513 /* LaunchScreen.storyboard in Resources */,
 				636CCD5821D7EC6500C75513 /* Assets.xcassets in Resources */,
