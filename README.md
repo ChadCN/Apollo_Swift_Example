@@ -1,6 +1,6 @@
 # Apollo_Swift_Example
 
-This is a simple example about how to use Apollo in Swift.
+This is a simple example about how to use Apollo in Swift/RxSwift.
 
 ## How to run the demo
 
@@ -10,9 +10,10 @@ $pod install
 ```
 
 2. This demo is using github API, relace token inside `AppDelegate.swift` with your own one.
-
-    `github -> settings ->  developer settings -> personal access tokens`
-
+```swift 
+  // Where to get your own github token
+  github -> settings ->  developer settings -> personal access tokens
+```
 
 ## How To Install Apollo
 check out [Apollo Installation](https://www.apollographql.com/docs/ios/installation.html)  for install steps.
