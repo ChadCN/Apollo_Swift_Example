@@ -1,0 +1,6 @@
+query userInfo {
+  user(login: "chad") {
+  name
+  email
+  }
+}
