@@ -10,7 +10,8 @@ $pod install
 ```
 
 2. This demo is using github API, relace token inside `AppDelegate.swift` with your own one.
-    github -> settings ->  developer settings -> personal access tokens 
+
+    `github -> settings ->  developer settings -> personal access tokens`
 
 
 ## How To Install Apollo
