@@ -12,7 +12,7 @@ import Apollo
 let apollo: ApolloClient = {
   let configuration = URLSessionConfiguration.default
   // Add additional headers as needed
-  configuration.httpAdditionalHeaders = ["Authorization": "Bearer 18eaef77b25b621e43625388a6711338be878989"] // Replace `<token>`
+  configuration.httpAdditionalHeaders = ["Authorization": "Bearer 230c629617c2ed29bb4f9644ee70dc35906fdf36"] // Replace `<token>`
 
   let url = URL(string: "https://api.github.com/graphql")!
   

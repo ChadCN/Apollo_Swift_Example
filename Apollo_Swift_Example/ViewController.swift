@@ -16,15 +16,16 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-//    getMarkUser()
-    
     /* Reactive way to fetch data */
+    /* This is a Github API, token always expired */
+    /* If get 401, replace Token at AppDelegate.swift */
     apollo.rx.fetch(query: UserInfoQuery())
-      .debug()
       .subscribe(onSuccess: { data in
         print(data.user!.name!)
         print(data.user!.email)
-      })
+        }, onError: { error in
+        print(error.localizedDescription)
+        })
       .disposed(by:bag)
   }
 
