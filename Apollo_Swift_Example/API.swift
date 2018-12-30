@@ -4,16 +4,23 @@ import Apollo
 
 public final class UserInfoQuery: GraphQLQuery {
   public let operationDefinition =
-    "query userInfo {\n  user(login: \"chad\") {\n    __typename\n    name\n    email\n  }\n}"
+    "query userInfo($name: String!) {\n  user(login: $name) {\n    __typename\n    name\n    email\n  }\n}"
 
-  public init() {
+  public var name: String
+
+  public init(name: String) {
+    self.name = name
+  }
+
+  public var variables: GraphQLMap? {
+    return ["name": name]
   }
 
   public struct Data: GraphQLSelectionSet {
     public static let possibleTypes = ["Query"]
 
     public static let selections: [GraphQLSelection] = [
-      GraphQLField("user", arguments: ["login": "chad"], type: .object(User.selections)),
+      GraphQLField("user", arguments: ["login": GraphQLVariable("name")], type: .object(User.selections)),
     ]
 
     public private(set) var resultMap: ResultMap

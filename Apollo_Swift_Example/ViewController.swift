@@ -17,9 +17,8 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     
     /* Reactive way to fetch data */
-    /* This is a Github API, token always expired */
-    /* If get 401, replace Token at AppDelegate.swift */
-    apollo.rx.fetch(query: UserInfoQuery())
+    /* If get 401 error, replace Token at AppDelegate.swift */
+    apollo.rx.fetch(query: UserInfoQuery(name: "chad"))
       .subscribe(onSuccess: { data in
         print(data.user!.name!)
         print(data.user!.email)
@@ -31,8 +30,8 @@ class ViewController: UIViewController {
 
   
   /* regular way to fetch data */
-  func getMarkUser() {
-    let getUserQL = UserInfoQuery()
+  func getMarkUser(_ name: String) {
+    let getUserQL = UserInfoQuery(name: name)
     apollo.fetch(query: getUserQL) { (result, error) in
       print(result ?? "nil")
       print(error ?? "nil")

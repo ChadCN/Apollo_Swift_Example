@@ -1,5 +1,5 @@
-query userInfo {
-  user(login: "chad") {
+query userInfo($name: String!) {
+  user(login: $name) {
   name
   email
   }
